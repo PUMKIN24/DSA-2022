@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extract fields from json and create new array</title>
+    <script>
+       const input = {
+            'students' : [
+                {
+                    name : 'jerry',
+                    Id : '123'
+                },
+                {
+                    name : 'suman',
+                    Id : '456'
+                },
+                {
+                    name : 'cyan',
+                    Id : '789'
+                }
+            ]
+        }
+
+        const op = input.students.map((item) => {
+            return item.name
+        })
+        console.log(op)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
