@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty an array</title>
+
+    <script>
+
+        let data = [1,2,3,4,5,6,7,8,0]
+
+        //way 1
+        //data = []
+
+
+        //way 2
+        //data.length = 0
+
+
+        //way 3
+        // while(data.length > 0 )
+        //  {
+        //     data.pop()
+        //  }
+
+        //way 4
+        data.splice(0,data.length)
+
+        console.log(data.length)
+        console.log(data)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
