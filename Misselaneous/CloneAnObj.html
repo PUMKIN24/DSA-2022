@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone an object</title>
+    <script>
+
+        const data = {
+            id : '22',
+            age : '44',
+            place : 'KL'
+        }
+
+        //way 1
+        //Object.assign() takes two values one is the destination and other is the source
+        const copyData1 = Object.assign({}, data)
+
+        console.log(copyData1)
+
+        //way 2
+        //using spread operator
+        const copyData2 = {...data}
+        console.log(copyData2)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
